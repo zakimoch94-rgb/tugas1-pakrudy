@@ -1,0 +1,610 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #f8fafc;
+}
+
+
+/* ========================================
+   HEADER & NAVIGATION
+======================================== */
+
+header {
+    background-color: #ffffff;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 18px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #2563eb;
+    font-size: 26px;
+}
+
+nav ul {
+    display: flex;
+
+    gap: 22px;
+
+    list-style: none;
+}
+
+nav ul li a {
+    color: #1f2937;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2563eb;
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+main {
+    width: 100%;
+}
+
+
+/* ========================================
+   SEMUA SECTION
+======================================== */
+
+section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 80px 20px;
+}
+
+section h2 {
+    color: #111827;
+
+    font-size: 32px;
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    margin: 10px auto;
+
+    background-color: #2563eb;
+
+    border-radius: 5px;
+}
+
+
+/* ========================================
+   BERANDA / HERO
+======================================== */
+
+#beranda {
+    min-height: 90vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+#beranda > div:first-child {
+    flex: 1;
+}
+
+#beranda > div:first-child p:first-child {
+    color: #2563eb;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+#beranda h2 {
+    font-size: 48px;
+
+    text-align: left;
+
+    margin-bottom: 5px;
+
+    color: #111827;
+}
+
+#beranda h2::after {
+    display: none;
+}
+
+#beranda h3 {
+    color: #2563eb;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+#beranda p {
+    max-width: 600px;
+
+    margin-bottom: 20px;
+}
+
+#beranda a {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#beranda a:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-3px);
+}
+
+#beranda > div:last-child {
+    flex: 1;
+
+    text-align: center;
+}
+
+#beranda img {
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid #dbeafe;
+
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+}
+
+
+/* ========================================
+   TENTANG SAYA
+======================================== */
+
+#tentang {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 40px;
+}
+
+#tentang > h2 {
+    grid-column: 1 / -1;
+}
+
+#tentang article {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+#tentang article h3 {
+    color: #2563eb;
+
+    margin-bottom: 15px;
+
+    font-size: 23px;
+}
+
+#tentang article p {
+    margin-bottom: 15px;
+}
+
+#tentang aside {
+    background-color: #eff6ff;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #2563eb;
+}
+
+#tentang aside h3 {
+    color: #2563eb;
+
+    margin-bottom: 15px;
+}
+
+#tentang aside ul {
+    list-style: none;
+}
+
+#tentang aside li {
+    margin-bottom: 12px;
+}
+
+
+/* ========================================
+   KETERAMPILAN
+======================================== */
+
+#keterampilan {
+    max-width: none;
+
+    background-color: #eff6ff;
+}
+
+#keterampilan h2,
+#keterampilan article {
+    max-width: 1100px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#keterampilan article {
+    background-color: white;
+
+    padding: 30px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+#keterampilan article:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#keterampilan article h3 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+
+    font-size: 22px;
+}
+
+
+/* ========================================
+   PENDIDIKAN
+======================================== */
+
+#pendidikan article {
+    background-color: white;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #2563eb;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+#pendidikan article h3 {
+    color: #2563eb;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+#pendidikan article p {
+    margin-bottom: 12px;
+}
+
+
+/* ========================================
+   PROFIL DICODING
+======================================== */
+
+#dicoding {
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+#dicoding article {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background-color: #f0fdf4;
+
+    border-radius: 15px;
+
+    border: 2px solid #22c55e;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+#dicoding article h3 {
+    color: #15803d;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+#dicoding article p {
+    margin-bottom: 15px;
+}
+
+
+/* Tombol Dicoding */
+
+#dicoding article a {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 13px 25px;
+
+    background-color: #22c55e;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+#dicoding article a:hover {
+    background-color: #15803d;
+
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   TUJUAN
+======================================== */
+
+#tujuan {
+    background-color: #eff6ff;
+
+    text-align: center;
+}
+
+#tujuan p {
+    max-width: 800px;
+
+    margin: 0 auto 15px;
+}
+
+
+/* ========================================
+   KONTAK
+======================================== */
+
+#kontak {
+    text-align: center;
+}
+
+#kontak > ul {
+    list-style: none;
+
+    margin-top: 25px;
+}
+
+#kontak li {
+    margin-bottom: 15px;
+}
+
+#kontak a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+#kontak a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ========================================
+   RESPONSIVE TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    #beranda {
+        flex-direction: column-reverse;
+
+        text-align: center;
+    }
+
+    #beranda h2 {
+        text-align: center;
+
+        font-size: 40px;
+    }
+
+    #beranda h3 {
+        font-size: 22px;
+    }
+
+    #beranda > div:first-child p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #tentang {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ========================================
+   RESPONSIVE MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px;
+    }
+
+    nav h1 {
+        font-size: 23px;
+    }
+
+    nav ul {
+        gap: 12px;
+
+        font-size: 14px;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    #beranda {
+        min-height: auto;
+
+        padding-top: 70px;
+    }
+
+    #beranda h2 {
+        font-size: 32px;
+    }
+
+    #beranda h3 {
+        font-size: 20px;
+    }
+
+    #beranda img {
+        width: 220px;
+        height: 220px;
+    }
+
+    #tentang article,
+    #tentang aside,
+    #pendidikan article,
+    #dicoding article {
+        padding: 22px;
+    }
+
+    #keterampilan article {
+        padding: 22px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
